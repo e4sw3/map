@@ -88,7 +88,7 @@
         circle = L.circle(e.latlng, radius).addTo(map);
       }
       marker = L.marker(e.latlng).addTo(map)
-      .bindPopup(form, {maxWidth:300});
+      .bindPopup(form, {maxWidth:230});
       
       //if you try and open the popup right away the location may not be ready, eventhough it's firing after locationfound
       setTimeout(function() {
