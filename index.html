@@ -80,7 +80,7 @@
       var form = '<div id="formdiv"><form role="form" id="projectform"><div class="form-group"><div class="form-group"><label for="description" class="requiredField">Registra posizione del Codice POS</label><textarea class="form-control" rows="2" id="descrip" placeholder="Inserire Codice POS (es: 9000123456)."></textarea></div><em class="text-muted">Posizionarsi sul punto esatto della mappa ed inserire manualmente il Codice POS.</em><div id="formHelp"></div><hr /><button type="submit" id="submit" class="btn btn-default btn-sm">Salva coordinate</button></form></div>';
 
       if (e.accuracy) {
-        var radius = (e.accuracy / 2) * 3.28084;
+        var radius = (e.accuracy / 2) * 1.6;
         circle = L.circle(e.latlng, radius).addTo(map);
       }
       marker = L.marker(e.latlng).addTo(map)
